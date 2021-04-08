@@ -1,0 +1,79 @@
+/* use a non-serif font */
+html {
+  font-family: 'verdana', sans-serif;
+}
+
+/* get rid of the browser's default margin and padding around the body */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* absolute position the map container as full screen, leaving 300 pixels on the left */
+#map-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 300px;
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 1.8rem;
+}
+
+/* blue buttons with white bold text */
+.flyto-button {
+  background: #39c92c;
+  color: #FFF;
+  padding: 11px;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  width: 100%;
+  margin-bottom:15px;
+}
+
+.flyto-button-s {
+  background: #39c92c;
+  color: #FFF;
+  padding: 4px;
+  border: none;
+  font-weight: 400;
+  font-size: 1rem;
+  width: 45%;
+  margin-bottom:15px;
+  float: left;
+}
+
+.flyto-button-sl {
+  background: #39c92c;
+  color: #FFF;
+  padding: 4px;
+  border: none;
+  font-weight: 400;
+  font-size: 1rem;
+  width: 45%;
+  margin-bottom:15px;
+  float: right;
+}
+/* on hover, make the background darker and turn the cursor to a pointer */
+button:hover {
+  cursor: pointer;
+  background-color: #72bf54;
+}
+
+/* sidebar is fixed with and positioned to the left */
+#sidebar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 300px;
+  background-color: #438529;
+  color: #FFF;
+  padding: 25px;
+  box-sizing: border-box;
+  overflow: auto;
+}

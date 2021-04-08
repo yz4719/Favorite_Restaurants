@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+git config --global yz4719.email "yz4719@nyu.edu"
+git config --global yz4719.name "Yiyong Zhang"
+  <head>
+      <meta charset='utf-8' />
+      <title>🍜The Class’s favorite Restaurants Map 🍜</title>
+      <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+      <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.7.0/mapbox-gl.css' rel='stylesheet' />
+      <link href='css/styles.css' rel='stylesheet' />
+  </head>
+  <body>
+    <!-- the sidebar is fixed width and will contain a title, some text, and buttons -->
+    <div id='sidebar'>
+
+    <h3>🥘Restaurants Map 🍱</h3>
+    <br/>
+    <p>👨🏽‍🏫After the last food related Duolingo events, everyone at my event shared their favorite restaurants and recommend dish(es).</p>
+    <br/>
+    <p>📍Click a marker to see the student's class name, restaurant name, and the name of the recommended dish(es). </p>
+
+    <hr/>
+
+    <p>🚀Wanna take a rocket? Click the bottom below to flight to a place you want! Poof~ </p>
+
+    <br/>
+    <!-- Buttons for flying the map -->
+    <button class='flyto-button' id="china">🌏Asia</button>
+    <br/>
+
+    <button class='flyto-button' id="michigan">🌍Europe</button>
+    <br/>
+
+    <button class='flyto-button' id="colombia">🌎Americas</button>
+    <br/>
+
+    <button class='flyto-button' id="nyc">🛸The World View</button>
+
+    <p>🚀There are more than one recommend spots in NYC and Taipei, Let's take a closer look~ </p>
+
+    <button class='flyto-button-s' id="nyc1">🗽NYC</button>
+    <button class='flyto-button-sl' id="taipei">🏙️Taipei</button>
+
+    </div>
+
+
+    <!-- this is the map container, which will hold the mapboxGL map -->
+    <div id='map-container'></div>
+
+    <!-- Load mapboxGL, jQuery, then our local javascript files -->
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.7.0/mapbox-gl.js'></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"></script>
+    <script src='js/data0.js'></script>
+    <script src='js/scripts.js'></script>
+
+  </body>
+</html>
